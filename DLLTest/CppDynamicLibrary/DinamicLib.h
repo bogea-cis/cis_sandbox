@@ -32,6 +32,7 @@ extern "C"
 
     
 int CIS_PINPADAPI ShowInfo( void);
+int CIS_PINPADAPI TestSSL( void);
     
     
 #ifdef __cplusplus

@@ -42,12 +42,19 @@
           </preprocessorList>
         </cTool>
         <ccTool>
+          <incDir>
+            <pElem>../openssl/include</pElem>
+          </incDir>
           <preprocessorList>
             <Elem>WINDOWS</Elem>
           </preprocessorList>
         </ccTool>
         <linkerTool>
           <output>../release/DinamicLibrary64.dll</output>
+          <linkerAddLib>
+            <pElem>../openssl/lib/x64</pElem>
+          </linkerAddLib>
+          <commandLine>-lssl -lcrypto</commandLine>
         </linkerTool>
       </compileType>
       <item path="DinamicLib.cpp" ex="false" tool="1" flavor2="0">
@@ -63,12 +70,18 @@
       </toolsSet>
       <compileType>
         <cTool>
+          <incDir>
+            <pElem>../openssl/include</pElem>
+          </incDir>
           <commandLine>-m32</commandLine>
           <preprocessorList>
             <Elem>WINDOWS</Elem>
           </preprocessorList>
         </cTool>
         <ccTool>
+          <incDir>
+            <pElem>../openssl/include</pElem>
+          </incDir>
           <commandLine>-m32</commandLine>
           <preprocessorList>
             <Elem>WINDOWS</Elem>
@@ -76,7 +89,11 @@
         </ccTool>
         <linkerTool>
           <output>../release/DinamicLibrary32.dll</output>
-          <commandLine>-m32</commandLine>
+          <linkerAddLib>
+            <pElem>../openssl/lib/x86</pElem>
+          </linkerAddLib>
+          <linkerCopySharedLibs>true</linkerCopySharedLibs>
+          <commandLine>-m32 -lssl -lcrypto</commandLine>
         </linkerTool>
       </compileType>
       <item path="DinamicLib.cpp" ex="false" tool="1" flavor2="9">

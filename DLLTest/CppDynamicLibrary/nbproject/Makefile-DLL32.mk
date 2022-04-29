@@ -52,7 +52,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-L../openssl/lib/x86
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -60,12 +60,12 @@ LDLIBSOPTIONS=
 
 ../release/DinamicLibrary32.dll: ${OBJECTFILES}
 	${MKDIR} -p ../release
-	${LINK.cc} -o ../release/DinamicLibrary32.dll ${OBJECTFILES} ${LDLIBSOPTIONS} -m32 -shared
+	${LINK.cc} -o ../release/DinamicLibrary32.dll ${OBJECTFILES} ${LDLIBSOPTIONS} -m32 -lssl -lcrypto -shared
 
 ${OBJECTDIR}/DinamicLib.o: DinamicLib.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWINDOWS  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DinamicLib.o DinamicLib.cpp
+	$(COMPILE.cc) -g -DWINDOWS -I../openssl/include  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DinamicLib.o DinamicLib.cpp
 
 # Subprojects
 .build-subprojects:
