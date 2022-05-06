@@ -34,6 +34,16 @@ int m_vendorId = 0xfff0;
 int m_productId = 0x0100;
 
 
+/*========================================================================================
+     Fnc: CISCDC_API CISCDC_RET CISCDC_Open( void)
+  ===========================================*/ /**
+  @brief
+  @details
+  @param none
+  @return none
+  @author L.Bogea
+  @warning
+  */
 CISCDC_API CISCDC_RET CISCDC_Open( void)
 {
   CISCDC_RET response = CISCDC_OK;
@@ -114,6 +124,16 @@ CISCDC_API CISCDC_RET CISCDC_Open( void)
   return response;
 }
 
+/*========================================================================================
+     Fnc: CISCDC_API CISCDC_RET CISCDC_Close( void)
+  ===========================================*/ /**
+  @brief
+  @details
+  @param none
+  @return none
+  @author L.Bogea
+  @warning
+  */
 CISCDC_API CISCDC_RET CISCDC_Close( void)
 {
   CISCDC_RET response = CISCDC_OK;
@@ -124,6 +144,17 @@ CISCDC_API CISCDC_RET CISCDC_Close( void)
   return response;
 }
 
+/*========================================================================================
+     Fnc: CISCDC_API CISCDC_RET CISCDC_Read( unsigned char* buffer, DWORD numberOfBytes)
+  ===========================================*/ /**
+  @brief    
+  @details  
+  @param    buffer
+  @param    numberOfBytes
+  @return   CISCDC_RET
+  @author   L.Bogea
+  @warning  
+  */
 CISCDC_API CISCDC_RET CISCDC_Read( unsigned char* buffer, DWORD numberOfBytes)
 {
   CISCDC_RET response = CISCDC_OK;
@@ -135,6 +166,16 @@ CISCDC_API CISCDC_RET CISCDC_Read( unsigned char* buffer, DWORD numberOfBytes)
   return response;
 }
 
+/*========================================================================================
+     Fnc: CISCDC_API CISCDC_RET CISCDC_Write( unsigned char* buffer, int length)
+  ===========================================*/ /**
+  @brief
+  @details
+  @param none
+  @return none
+  @author L.Bogea
+  @warning
+  */
 CISCDC_API CISCDC_RET CISCDC_Write( unsigned char* buffer, int length)
 {
   CISCDC_RET response = CISCDC_OK;
