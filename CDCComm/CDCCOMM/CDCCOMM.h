@@ -10,9 +10,9 @@
 typedef enum cisReply {
   CISCDC_OK = 0,
   CISCDC_ALREADY_OPEN = 1,
-
-  CISCDC_UNKNOWN_ERROR = -1,
-  CISCDC_OPEN_ERROR = -2,
+  CISCDC_TIMEOUT = -1,
+  CISCDC_UNKNOWN_ERROR = -2,
+  CISCDC_OPEN_ERROR = -3,
 } CISCDC_RET;
 
 #ifdef __cplusplus

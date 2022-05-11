@@ -26,7 +26,8 @@ PSP_DEVICE_INTERFACE_DETAIL_DATA InterfaceDetailStructure = { 0 };
 SP_DEVINFO_DATA DevInfoData = { 0 };
 WCHAR devicePath[512] = { 0 };
 BOOL connected = false;
-
+OVERLAPPED ReadOL;
+OVERLAPPED WriteOL;
 
 GUID guid = { 0xa5dcbf10, 0x6530, 0x11D2, { 0x90, 0x1f, 0x00, 0xc0, 0x4f, 0xb9, 0x51, 0xed } }; //GUID - Globally Unique Identifier - regedit para todas portas CDC
 
@@ -105,6 +106,11 @@ CISCDC_API CISCDC_RET CISCDC_Open( void)
 
   SetupDiDestroyDeviceInfoList(hDevInfo);
 
+  ReadOL.hEvent = CreateEvent( NULL, TRUE, FALSE, NULL);
+  if (ReadOL.hEvent == 0) {
+    success = false;
+  }
+
   if (success == false) {
     response = CISCDC_OPEN_ERROR;
     return response;
@@ -120,6 +126,20 @@ CISCDC_API CISCDC_RET CISCDC_Open( void)
     response = CISCDC_OPEN_ERROR;
     return response;
   }
+
+  COMMTIMEOUTS cto;
+  if (!GetCommTimeouts(hDevice, &cto)) {
+    printf("*** error %d\n", GetLastError());
+  }
+
+  cto.ReadIntervalTimeout = MAXDWORD;
+  cto.ReadTotalTimeoutMultiplier = 0;
+  cto.ReadTotalTimeoutConstant = 5000;
+  cto.WriteTotalTimeoutMultiplier = MAXDWORD;
+  cto.WriteTotalTimeoutConstant = MAXDWORD;
+
+  SetCommTimeouts(hDevice, &cto);
+
   connected = true;
   return response;
 }
@@ -137,8 +157,13 @@ CISCDC_API CISCDC_RET CISCDC_Open( void)
 CISCDC_API CISCDC_RET CISCDC_Close( void)
 {
   CISCDC_RET response = CISCDC_OK;
+  if (ReadOL.hEvent) {
+    CloseHandle(ReadOL.hEvent);
+    ReadOL.hEvent = NULL;
+  }
   if (hDevice != NULL && hDevice != INVALID_HANDLE_VALUE) {
     CloseHandle(hDevice);
+    hDevice = 0;
   }
   connected = false;
   return response;
@@ -157,11 +182,28 @@ CISCDC_API CISCDC_RET CISCDC_Close( void)
   */
 CISCDC_API CISCDC_RET CISCDC_Read( unsigned char* buffer, DWORD numberOfBytes)
 {
+  COMSTAT cstat;
+  DWORD cerr;
+  DWORD dw = 0;  
   CISCDC_RET response = CISCDC_OK;
-  DWORD numberOfBytesRead;
+  DWORD numberOfBytesRead = 0;
 
-  if (connected) {
-    ReadFile( hDevice, buffer, numberOfBytes, &numberOfBytesRead, NULL);
+  if (!connected) {
+    response = CISCDC_OPEN_ERROR;
+    return response;
+  }
+
+  if (ClearCommError(hDevice, &cerr, &cstat) && cstat.cbInQue) {
+    if (!ReadFile(hDevice, buffer, numberOfBytes, &numberOfBytesRead, &ReadOL)) {
+      long lError = GetLastError();
+      if ( lError == ERROR_IO_PENDING) {
+        // Waiting for data
+        if (GetOverlappedResult(hDevice, &ReadOL, &numberOfBytesRead, TRUE)) {
+          // Read complete, reset event
+          ResetEvent(ReadOL.hEvent);
+        }
+      }
+    }
   }
   return response;
 }
