@@ -1,7 +1,0 @@
-Linea :CIS Brasile
-Ordine : 00001 
-Produttore :CIS Brasile  
-Modello : LS40  
-Operatore :Cristiane.A
-Conf :1
-Firm :2
