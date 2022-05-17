@@ -1,0 +1,187 @@
+<?xml version="1.0" standalone="yes"?>
+<Collaudi02DataSet xmlns="http://tempuri.org/Collaudi02DataSet.xsd">
+  <T_Staz_Coll>
+    <Id_Stazione>1</Id_Stazione>
+    <Nome_stazione>Progetto</Nome_stazione>
+    <Nome_linea>Progetto</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>172.16.1.111</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>2</Id_Stazione>
+    <Nome_stazione>ing1</Nome_stazione>
+    <Nome_linea>progetto</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>172.16.1.11</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>4</Id_Stazione>
+    <Nome_stazione>Bovio</Nome_stazione>
+    <Nome_linea>Ingegneria</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>172.16.0.230</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>5</Id_Stazione>
+    <Nome_stazione>Produzione 1</Nome_stazione>
+    <Nome_linea>Linea A</Nome_linea>
+    <Azienda>cts produzione</Azienda>
+    <IndirizzoIP>172.17.0.154</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>6</Id_Stazione>
+    <Nome_stazione>Plorutti</Nome_stazione>
+    <Nome_linea>Ingegneria</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>172.17.0.79</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>7</Id_Stazione>
+    <Nome_stazione>Produzione 2</Nome_stazione>
+    <Nome_linea>Linea A</Nome_linea>
+    <Azienda>cts produzione</Azienda>
+    <IndirizzoIP>172.17.0.73</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>8</Id_Stazione>
+    <Nome_stazione>Gardi</Nome_stazione>
+    <Nome_linea>Ingegneria</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>172.16.5.15</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>9</Id_Stazione>
+    <Nome_stazione>Produzione 3</Nome_stazione>
+    <Nome_linea>Linea A</Nome_linea>
+    <Azienda>cts produzione</Azienda>
+    <IndirizzoIP>172.17.0.158</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>10</Id_Stazione>
+    <Nome_stazione>Produzione 4</Nome_stazione>
+    <Nome_linea>Linea A</Nome_linea>
+    <Azienda>cts produzione</Azienda>
+    <IndirizzoIP>172.17.0.191</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>11</Id_Stazione>
+    <Nome_stazione>Produzione 5</Nome_stazione>
+    <Nome_linea>Linea A</Nome_linea>
+    <Azienda>cts produzione</Azienda>
+    <IndirizzoIP>172.17.0.156</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>12</Id_Stazione>
+    <Nome_stazione>Produzione SB50 1</Nome_stazione>
+    <Nome_linea>Produzione CTS</Nome_linea>
+    <Azienda>cts produzione</Azienda>
+    <IndirizzoIP>172.16.1.220</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>13</Id_Stazione>
+    <Nome_stazione>Produzione SB50 2</Nome_stazione>
+    <Nome_linea>Produzione CTS</Nome_linea>
+    <Azienda>cts produzione</Azienda>
+    <IndirizzoIP>172.16.1.221</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>14</Id_Stazione>
+    <Nome_stazione>Produzione 6</Nome_stazione>
+    <Nome_linea>Linea A</Nome_linea>
+    <Azienda>cts produzione</Azienda>
+    <IndirizzoIP>172.17.0.227</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>15</Id_Stazione>
+    <Nome_stazione>progetto2</Nome_stazione>
+    <Nome_linea>prove</Nome_linea>
+    <Azienda>prove</Azienda>
+    <IndirizzoIP>172.17.0.194</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>16</Id_Stazione>
+    <Nome_stazione>Roffinot</Nome_stazione>
+    <Nome_linea>Ingegneria Prod</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>172.16.1.201</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>17</Id_Stazione>
+    <Nome_stazione>Progetto2</Nome_stazione>
+    <Nome_linea>Progetto</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>172.17.0.161</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>18</Id_Stazione>
+    <Nome_stazione>Oberto</Nome_stazione>
+    <Nome_linea>Ingegneria</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>172.16.3.23</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>19</Id_Stazione>
+    <Nome_stazione>Ingegneria3</Nome_stazione>
+    <Nome_linea>Ingegneria</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>fe80::fdcb:3540</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>20</Id_Stazione>
+    <Nome_stazione>Prova</Nome_stazione>
+    <Nome_linea>Prova</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>172.16.1.148</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>21</Id_Stazione>
+    <Nome_stazione>Davide</Nome_stazione>
+    <Nome_linea>Progetto</Nome_linea>
+    <Azienda>cts</Azienda>
+    <IndirizzoIP>fe80::c74:f48:d</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>22</Id_Stazione>
+    <Nome_stazione>Produzione Ls40</Nome_stazione>
+    <Nome_linea>Linea A</Nome_linea>
+    <Azienda>cts produzione</Azienda>
+    <IndirizzoIP>172.17.0.142</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>23</Id_Stazione>
+    <Nome_stazione>Produzione x</Nome_stazione>
+    <Nome_linea>Linea x</Nome_linea>
+    <Azienda>Cts</Azienda>
+    <IndirizzoIP>172.17.0.100</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+  <T_Staz_Coll>
+    <Id_Stazione>24</Id_Stazione>
+    <Nome_stazione>Produzione xx</Nome_stazione>
+    <Nome_linea>Linea x </Nome_linea>
+    <Azienda>Cts</Azienda>
+    <IndirizzoIP>172.17.0.136</IndirizzoIP>
+    <Used>0</Used>
+  </T_Staz_Coll>
+</Collaudi02DataSet>

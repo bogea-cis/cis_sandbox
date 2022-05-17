@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="yes"?>
+<Collaudi02DataSet xmlns="http://tempuri.org/Collaudi02DataSet.xsd">
+  <T_Versioni>
+    <VersioneDll_0>C.T.S. LS100.dll USB -- Ver. 1.04, Rev. 001, date 26/06/2008</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Ls100Class.dll -- Ver. 1.00, Rev 000,  date 10/06/2009</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoLs100.dll -- Ver. 1.00 Rev 000 date 10/06/2009</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 1.00 Rev. 006 date 02/02/2010</VersioneApplicativo>
+    <Periferica>1</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>C.T.S. LS150.dll USB -- Ver. 1.00, Rev. 008, date 17/03/2009</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Ls150Class.dll -- Ver. 1.00, Rev 000,  date 10/06/2009</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoLs150.dll -- Ver. 1.00 Rev 000 date 10/06/2009</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 1.00 Rev. 006 date 02/02/2010</VersioneApplicativo>
+    <Periferica>2</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>11111</VersioneDll_0>
+    <VersioneDll_1>11111</VersioneDll_1>
+    <VersioneTest>1111</VersioneTest>
+    <VersioneApplicativo>11111</VersioneApplicativo>
+    <Periferica>3</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>C.T.S. SB50.dll  USB -- Ver. 1.01, Rev. 003, date 05/10/2009</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Sb50Class.dll -- Ver. 1.00, Rev 000,  date 28/07/2009</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoSB50.dll -- Ver. 1.00 Rev 000 date 02/10/2009</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 1.00 Rev. 006 date 02/02/2010</VersioneApplicativo>
+    <Periferica>4</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>a</VersioneDll_0>
+    <VersioneDll_1>a</VersioneDll_1>
+    <VersioneTest>a</VersioneTest>
+    <VersioneApplicativo>a</VersioneApplicativo>
+    <Periferica>7</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>C.T.S. LS150.dll USB -- Ver. 1.00, Rev. 008, date 17/03/2009</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Ls150Class.dll -- Ver. 1.00, Rev 000,  date 10/06/2009</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoLs150.dll -- Ver. 1.00 Rev 000 date 10/06/2009</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 1.00 Rev. 006 date 02/02/2010</VersioneApplicativo>
+    <Periferica>11</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>C.T.S. LS100.dll USB -- Ver. 1.04, Rev. 001, date 26/06/2008</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Ls100Class.dll -- Ver. 1.00, Rev 000,  date 10/06/2009</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoLs100.dll -- Ver. 1.00 Rev 000 date 10/06/2009</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 1.00 Rev. 006 date 02/02/2010</VersioneApplicativo>
+    <Periferica>12</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>C.T.S. LS100.dll USB -- Ver. 1.04, Rev. 001, date 26/06/2008</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Ls100Class.dll -- Ver. 2.00, Rev 000,  date 22/03/2010</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoLs100.dll -- Ver. 1.00 Rev 004 date 06/07/2010</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 1.00 Rev. 006 date 06/07/2010</VersioneApplicativo>
+    <Periferica>30</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>C.T.S. SB50.dll  USB -- Ver. 1.01, Rev. 003, date 05/10/2009</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Sb50Class.dll -- Ver. 1.00, Rev 002,  date 13/10/2009</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoSB50.dll -- Ver. 1.00 Rev 001 date 12/10/2009</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 1.00 Rev. 006 date 02/02/2010</VersioneApplicativo>
+    <Periferica>41</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>C.T.S. LSAPI.dll USB -- Ver. 1.00, Rev. 008, date 17/03/2009</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Ls150Class.dll -- Ver. 2.00, Rev 000,  date 22/03/2010</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoLs150.dll -- Ver. 2.00 Rev 000 date 01/06/2010</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 2.00 Rev. 001 date 06/07/2010</VersioneApplicativo>
+    <Periferica>47</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>Prova lsapi.dll</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Ls40Class.dll -- Ver. 1.00, Rev 000,  date 14/01/2010"</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoLs40.dll -- Ver. 1.00 Rev 000 date 14/01/2010</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 1.00 Rev. 006 date 02/02/2010</VersioneApplicativo>
+    <Periferica>48</Periferica>
+  </T_Versioni>
+  <T_Versioni>
+    <VersioneDll_0>C.T.S. LSAPI.dll USB -- Ver. 1.00, Rev. 008, date 17/03/2009</VersioneDll_0>
+    <VersioneDll_1>C.T.S. Ls150Class.dll -- Ver. 2.00, Rev 000,  date 22/03/2010</VersioneDll_1>
+    <VersioneTest>C.T.S. TestFasiCollaudoLs150.dll -- Ver. 2.00 Rev 000 date 01/06/2010</VersioneTest>
+    <VersioneApplicativo>C.T.S. CollaudoPeriferiche.exe Ver. 2.00 Rev. 001 date 06/07/2010</VersioneApplicativo>
+    <Periferica>57</Periferica>
+  </T_Versioni>
+</Collaudi02DataSet>

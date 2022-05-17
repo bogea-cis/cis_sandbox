@@ -1,0 +1,255 @@
+<?xml version="1.0" standalone="yes"?>
+<Collaudi02DataSet xmlns="http://tempuri.org/Collaudi02DataSet.xsd">
+  <T_Messaggi>
+    <ID_Messaggio>45</ID_Messaggio>
+    <Descrizione>Controlla Versione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Versione InkJet non corrispondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>149</ID_Messaggio>
+    <Descrizione>TestCheckVersion</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Attenzione, possibile Piastra NON collaudata</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>150</ID_Messaggio>
+    <Descrizione>Controlla Versione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Versione FPGA non corrispondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>151</ID_Messaggio>
+    <Descrizione>ControllaVersione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Versione Board non corrispondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>152</ID_Messaggio>
+    <Descrizione>ControllaVersione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Data Versione non corrispondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>153</ID_Messaggio>
+    <Descrizione>ControllaVersione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Versione firmware non corripondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>154</ID_Messaggio>
+    <Descrizione>TestSNperStampa</Descrizione>
+    <Titolo xml:space="preserve"> </Titolo>
+    <CorpoMessaggio>Inserire il Serial Number della periferica da collaudare</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>155</ID_Messaggio>
+    <Descrizione>TestSerialNumberPiastra</Descrizione>
+    <Titolo xml:space="preserve"> </Titolo>
+    <CorpoMessaggio>Inserire SerialNumber Piastra</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>156</ID_Messaggio>
+    <Descrizione>TestBeeep</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Iniziare il test Beep ( ascoltare 5 beep)</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>157</ID_Messaggio>
+    <Descrizione>TestBeeep</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>La periferica ha fatto Beep 5 volte ?</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>158</ID_Messaggio>
+    <Descrizione>TestLED</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Iniziare il test LED (Verificare lampeggio ROSSO)</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>159</ID_Messaggio>
+    <Descrizione>TestLED</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Il Led Lampeggia ROSSO ?</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>160</ID_Messaggio>
+    <Descrizione>TestLED</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Iniziare il test LED (Verificare lampeggio VERDE)</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>161</ID_Messaggio>
+    <Descrizione>TestLED</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Il Led Lampeggia VERDE ?</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>162</ID_Messaggio>
+    <Descrizione>TestfotoPeriferica</Descrizione>
+    <Titolo>attenzione</Titolo>
+    <CorpoMessaggio>Rimuovere eventuali documenti dal percorso</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>163</ID_Messaggio>
+    <Descrizione>TestCinghia</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Test Cinghia: Inserire il Docutest-067</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>164</ID_Messaggio>
+    <Descrizione>TestScannerPeriferica</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire il DOCUTEST --055 per la calibrazione Scanner. !</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>165</ID_Messaggio>
+    <Descrizione>TestQualitàimmagine</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire un documento DOCUTEST -035  per verificare l'immagine </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>166</ID_Messaggio>
+    <Descrizione>TestLunghezzaImaagine</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire DOCUTEST --042 Per calibrazione lunghezza immagine sino all' esito</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>167</ID_Messaggio>
+    <Descrizione>TestSmagnetizzato</Descrizione>
+    <Titolo>Cts Electronics S.P.A  Collaudo periferiche</Titolo>
+    <CorpoMessaggio>Smagnetizzare un documento E13B (DOCUTEST -046)</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>168</ID_Messaggio>
+    <Descrizione>TestSmagnetizzato</Descrizione>
+    <Titolo>Cts Electronics S.P.A  Collaudo periferiche</Titolo>
+    <CorpoMessaggio>Inserire un documento E13B DOCUTEST--046 Smagnetizzato</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>169</ID_Messaggio>
+    <Descrizione>TestSmagnetizzato</Descrizione>
+    <Titolo>Cts Electronics S.P.A  Collaudo periferiche</Titolo>
+    <CorpoMessaggio>Controllare la presenza del magnete</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>170</ID_Messaggio>
+    <Descrizione>TestCalibraTestina</Descrizione>
+    <Titolo>Cts Electronics S.P.A</Titolo>
+    <CorpoMessaggio>Calibrazione testina MICR:Inserire il valore del documento Docutest-042 </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>171</ID_Messaggio>
+    <Descrizione>TestCalibraTestina</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire nel Feeder DOCUTEST --042 'Lato Puntini...', fino ad avvenuta calibrazione:</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>172</ID_Messaggio>
+    <Descrizione>TestTempoCamp</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire DOCUTEST --042 dalla parte delle Barrette Continue</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>173</ID_Messaggio>
+    <Descrizione>TestLettura</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire documenti per lettura DOCUTEST 63-64-46 liv.1-48-61-62 </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>174</ID_Messaggio>
+    <Descrizione>TestLettura</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire documenti per lettura DOCUTEST 66-65-46-48-61-62 </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>175</ID_Messaggio>
+    <Descrizione>TestLettura</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Codeline Errata :</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>176</ID_Messaggio>
+    <Descrizione>TestBadge</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Strisciare Badge DOCUTEST --007</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>177</ID_Messaggio>
+    <Descrizione>TestBadge</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio> Le tracce del badge sono corrette !!!</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>178</ID_Messaggio>
+    <Descrizione>TestStampa</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire un DOCUTEST -059 per la prova di stampa</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>179</ID_Messaggio>
+    <Descrizione>TestStampa</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>La Stampante ha stampato bene ?</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>180</ID_Messaggio>
+    <Descrizione>TestTimbro</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire DOCUTEST -059 per test Timbro (Fac-simile Assegno con codeline su lato destro) :</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>181</ID_Messaggio>
+    <Descrizione>TestTimbro</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Togliere i documenti dal percorso carta se presenti</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>182</ID_Messaggio>
+    <Descrizione>TestTimbro</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Il timbro ha timbrato in modo corretto ?</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>183</ID_Messaggio>
+    <Descrizione>TestStampa</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire uno dei documenti timbrati per l'ultima prova di stampa</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>184</ID_Messaggio>
+    <Descrizione>TestSerialNumber</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire SN:</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>185</ID_Messaggio>
+    <Descrizione>TestSerialNumber</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>SerialNumber non corrispondente a quello inserito a inizio collaudo.</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>187</ID_Messaggio>
+    <Descrizione>TestBadge</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Traccie del badge lette non correttamente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>188</ID_Messaggio>
+    <Descrizione>TestBadge</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Strisciare il BADGE CARD-08</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>189</ID_Messaggio>
+    <Descrizione>TestBadge</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Strisciare il BADGE CARD- 10</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>191</ID_Messaggio>
+    <Descrizione>TestIdentificativo</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Collegare ORA la periferica da collaudare</CorpoMessaggio>
+  </T_Messaggi>
+</Collaudi02DataSet>

@@ -1,0 +1,76 @@
+---------------------------------------------------------------------------
+ARCA TECHNOLOGIES, S.R.L.                    Confidential
+
+LsFwDwl - Release Notes
+
+Module Name				Version
+
+LsFwDwl.exe				3.19.0.0
+LsFwDwl.ini
+FIRMWARE_DB.txt
+
+Current release version: 3.19.5.0
+March 6, 2017
+---------------------------------------------------------------------------
+
+1. NEW FEATURES AND ENHANCEMENTS 
+  
+  . LS40 - Added in FIRMWARE_DB.txt the FW release LS40 2.63 and 3.2E.
+  
+2. PROBLEMS ADDRESSED AND RESOLVED WITH THIS RELEASE
+ 
+3. KNOW ISSUES WITH THIS RELEASE
+
+
+---------------------------------------------------------------------------
+ARCA TECHNOLOGIES, S.R.L.                    Confidential
+
+LsFwDwl - Release Notes
+
+Current release version: 3.19.3.0
+March 6, 2017
+---------------------------------------------------------------------------
+
+1. NEW FEATURES AND ENHANCEMENTS 
+  
+  . LS40 - Added in FIRMWARE_DB.txt the FW release LS40 2.58 and 2.59.
+  . LS150 - Added in FIRMWARE_DB.txt the FW release LS150 3.24, 7.58 and 7.5A.
+  
+2. PROBLEMS ADDRESSED AND RESOLVED WITH THIS RELEASE
+ 
+3. KNOW ISSUES WITH THIS RELEASE
+
+---------------------------------------------------------------------------
+ARCA TECHNOLOGIES, S.R.L.                    Confidential
+
+LsFwDwl - Release Notes
+
+Current release version: 3.19.1.0
+February 12, 2016
+---------------------------------------------------------------------------
+
+1. NEW FEATURES AND ENHANCEMENTS 
+  
+  . Added in FIRMWARE_DB.txt the FW release LS40 2.51, 2.53, 2.54 and 3.09.
+  
+2. PROBLEMS ADDRESSED AND RESOLVED WITH THIS RELEASE
+  
+3. KNOW ISSUES WITH THIS RELEASE
+
+
+---------------------------------------------------------------------------
+ARCA TECHNOLOGIES, S.R.L.                    Confidential
+
+LsFwDwl - Release Notes
+
+Current release version: 3.19.0.0
+February 12, 2016
+---------------------------------------------------------------------------
+
+1. NEW FEATURES AND ENHANCEMENTS 
+  
+  . Added in FIRMWARE_DB.txt the FW release LS100/7_20.
+ 
+2. PROBLEMS ADDRESSED AND RESOLVED WITH THIS RELEASE
+ 
+3. KNOW ISSUES WITH THIS RELEASE

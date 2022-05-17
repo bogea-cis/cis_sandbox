@@ -1,0 +1,98 @@
+<?xml version="1.0" standalone="yes"?>
+<Collaudi02DataSet xmlns="http://tempuri.org/Collaudi02DataSet.xsd">
+  <T_Periferica>
+    <ID_Periferica>1</ID_Periferica>
+    <Nome>Ls100</Nome>
+    <Descrizione>Ls100 USB Test PROGETTO</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>2</ID_Periferica>
+    <Nome>Ls150</Nome>
+    <Descrizione>Ls150 USB Test PROGETTO</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>3</ID_Periferica>
+    <Nome>Ls40</Nome>
+    <Descrizione>Ls40 progetto</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>4</ID_Periferica>
+    <Nome>Sb50</Nome>
+    <Descrizione>Sb50 USB Progetto</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>5</ID_Periferica>
+    <Nome>Ls40</Nome>
+    <Descrizione>Ls40 progetto</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>6</ID_Periferica>
+    <Nome>Ls150</Nome>
+    <Descrizione>Ls150Report</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>7</ID_Periferica>
+    <Nome>Ls515</Nome>
+    <Descrizione>Ls515 progetto</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>11</ID_Periferica>
+    <Nome>Ls150</Nome>
+    <Descrizione>Ls150 Prove Progetto</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>12</ID_Periferica>
+    <Nome>Ls100</Nome>
+    <Descrizione>Ls100 Prova Progetto</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>30</ID_Periferica>
+    <Nome>Ls100</Nome>
+    <Descrizione>Ls100 USB</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>41</ID_Periferica>
+    <Nome>Sb50</Nome>
+    <Descrizione>Sb50 USB</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>47</ID_Periferica>
+    <Nome>Ls150</Nome>
+    <Descrizione>Ls150 USB</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>48</ID_Periferica>
+    <Nome>Ls40</Nome>
+    <Descrizione>Ls40 USB</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>51</ID_Periferica>
+    <Nome>Ls150</Nome>
+    <Descrizione>Ls150 VE</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>52</ID_Periferica>
+    <Nome>Ls150</Nome>
+    <Descrizione>LS150 150 (DPM)</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>53</ID_Periferica>
+    <Nome>Ls150</Nome>
+    <Descrizione>lS150 UV</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>54</ID_Periferica>
+    <Nome>Ls150</Nome>
+    <Descrizione>LS150 COLORE</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>57</ID_Periferica>
+    <Nome>Ls515</Nome>
+    <Descrizione>Ls5xx USB</Descrizione>
+  </T_Periferica>
+  <T_Periferica>
+    <ID_Periferica>133</ID_Periferica>
+    <Nome>Sb600</Nome>
+    <Descrizione>Sb600 USB</Descrizione>
+  </T_Periferica>
+</Collaudi02DataSet>

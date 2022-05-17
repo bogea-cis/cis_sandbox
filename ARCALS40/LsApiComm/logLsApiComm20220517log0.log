@@ -1,0 +1,8 @@
+2022/05/17 16:56:35:940 INFO    --start: 
+2022/05/17 16:56:35:941 FINER   ENTRY - br.com.cis.LsApiComm :  lib path=[D:\ciswk\cis1004-ls40\SOFT\LsApiComm\lib\WIN64\LsApi.dll]
+2022/05/17 16:56:36:355 FINER   ENTRY - br.com.cis.LsApiComm :  lib loaded=[D:\ciswk\cis1004-ls40\SOFT\LsApiComm\lib\WIN64\LsApi.dll]
+2022/05/17 16:56:39:054 FINER   ENTRY - br.com.cis.LsApiComm : LSConnect ret=[0][Success]
+2022/05/17 16:56:39:057 FINER   ENTRY - br.com.cis.LsApiComm : LSDisconnect ret=[0][Success]
+2022/05/17 16:56:39:059 INFO    SenseKey=[0], SensorStatus=[0] 
+2022/05/17 16:56:39:065 FINER   ENTRY - br.com.cis.LsApiComm : LSUnitIdentify ret=[0][Success]
+2022/05/17 16:56:39:066 FINER   ENTRY - br.com.cis.LsApiComm : LSGetVersion ret=[0][Success]

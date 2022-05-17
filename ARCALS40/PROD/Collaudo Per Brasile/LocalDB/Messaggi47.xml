@@ -1,0 +1,303 @@
+<?xml version="1.0" standalone="yes"?>
+<Collaudi02DataSet xmlns="http://tempuri.org/Collaudi02DataSet.xsd">
+  <T_Messaggi>
+    <ID_Messaggio>86</ID_Messaggio>
+    <Descrizione>ControllaVersione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Versione Feeder non corrispondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>87</ID_Messaggio>
+    <Descrizione>ControllaVersione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Versione FPGA non corrispondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>88</ID_Messaggio>
+    <Descrizione>ControllaVersione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Versione Firmware non corrispondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>89</ID_Messaggio>
+    <Descrizione>ControllaVersione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Data Versione non corrispondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>90</ID_Messaggio>
+    <Descrizione>ControllaVersione</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Versione BOARD non corrispondente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>91</ID_Messaggio>
+    <Descrizione>TestCheckVersion</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Attenzione, possibile Piastra NON collaudata</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>92</ID_Messaggio>
+    <Descrizione>TestFotoPerPeriferica</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Coprire fotosensori BIN per almeno 3 secondi</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>93</ID_Messaggio>
+    <Descrizione>TestFotoPerPeriferica</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Rimuovere eventuali documenti da percorso</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>94</ID_Messaggio>
+    <Descrizione>TestScannersPeriferica</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire il DOCUTEST --055 per la calibrazione Scanner. !</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>95</ID_Messaggio>
+    <Descrizione>TestFotoDP</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire il  DOCUTEST --052 nel Feeder per la calibrazione del fotosensore Doppia Sfogliatura</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>96</ID_Messaggio>
+    <Descrizione>TestStampa</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire un documento per la prova di stampa</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>97</ID_Messaggio>
+    <Descrizione>TestStampa</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>La stampante ha stampato bene ? </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>98</ID_Messaggio>
+    <Descrizione>TestTimbri</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire 10 Documenti per la prova del Timbro</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>99</ID_Messaggio>
+    <Descrizione>TestTimbri</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Togliere i documenti dal percorso carta se presenti</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>100</ID_Messaggio>
+    <Descrizione>TestTimbri</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio> Il timbro ha timbrato in modo corretto ?</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>101</ID_Messaggio>
+    <Descrizione>TestCalibraTestina</Descrizione>
+    <Titolo>NON VISUALIZZATO</Titolo>
+    <CorpoMessaggio> Attenzione !!! Calibrazione 300 DPI</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>102</ID_Messaggio>
+    <Descrizione>TestCalibraTestina</Descrizione>
+    <Titolo>NON VISUALIZZATO</Titolo>
+    <CorpoMessaggio> Attenzione !!! Calibrazione 200 DPI Velocita' Bassa</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>103</ID_Messaggio>
+    <Descrizione>TestCalibraTestina</Descrizione>
+    <Titolo>NON VISUALIZZATO</Titolo>
+    <CorpoMessaggio>Attenzione!!! Calibrazione 200 DPI</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>104</ID_Messaggio>
+    <Descrizione>TestCalibraTestina</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire DOCUTEST 042 lato puntini n° Volte, fino ad avvenuta calibrazione:</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>105</ID_Messaggio>
+    <Descrizione>TestTempoCamp</Descrizione>
+    <Titolo>Attenzione !!! Calibrazione 200 DPI </Titolo>
+    <CorpoMessaggio>Inserire DOCUTEST --042 dalla parte delle Barrette Continue</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>106</ID_Messaggio>
+    <Descrizione>TestTempoCamp</Descrizione>
+    <Titolo> Attenzione !!! Calibrazione 300 DPI</Titolo>
+    <CorpoMessaggio>Inserire DOCUTEST --042 dalla parte delle Barrette Continue</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>107</ID_Messaggio>
+    <Descrizione>TestTempoCamp</Descrizione>
+    <Titolo> Attenzione !!! Calibrazione 200 DPI Velocita'</Titolo>
+    <CorpoMessaggio>Inserire DOCUTEST --042 dalla parte delle Barrette Continue</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>108</ID_Messaggio>
+    <Descrizione>TestLettura</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire documenti per lettura DOCUTEST 63-64-46-48-61-62 </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>109</ID_Messaggio>
+    <Descrizione>TestLettura</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire documenti per lettura DOCUTEST 66-65-46-48-61-62 </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>110</ID_Messaggio>
+    <Descrizione>TestCarta</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire carta  DOCUTEST --043 dall' ingresso lineare</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>111</ID_Messaggio>
+    <Descrizione>TestCarta</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>ATTENZIONE CARTA BLOCCATA LIBERARE IL PERCORSO</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>112</ID_Messaggio>
+    <Descrizione>TestCarta</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>DOCUTEST --043 Inserito in modo non corretto</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>113</ID_Messaggio>
+    <Descrizione>TestCinghia</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Test Cinghia: Inserire il DOCUTEST -067</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>114</ID_Messaggio>
+    <Descrizione>TestBadge</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Strisciare Badge DOCUTEST --007</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>115</ID_Messaggio>
+    <Descrizione>TestBadge</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio> Le tracce del badge sono corrette</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>116</ID_Messaggio>
+    <Descrizione>TestLunghezzaImmagine</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire DOCUTEST 042 Per calibrazione lunghezza immagine, sino all' esito</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>117</ID_Messaggio>
+    <Descrizione>TestAssegnoSpesso</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire Docutest--052 Piegato Doppio </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>118</ID_Messaggio>
+    <Descrizione>TestAssegnoSpesso</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Accendere e Spegnere la periferica</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>119</ID_Messaggio>
+    <Descrizione>TestSmagnetizzato</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Smagnetizzare un documento CMC7 DOCUTEST--049</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>120</ID_Messaggio>
+    <Descrizione>TestSmagnetizzato</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire un documento CMC7 DOCUTEST--049 Smagnetizzato</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>121</ID_Messaggio>
+    <Descrizione>TestSmagnetizzato</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Smagnetizzare un documento E13B DOCUTEST--046</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>122</ID_Messaggio>
+    <Descrizione>TestSmagnetizzato</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire un documento E13B DOCUTEST--046 Smagnetizzato</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>123</ID_Messaggio>
+    <Descrizione>TestSmagnetizzato</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Controllare la presenza del magnete</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>124</ID_Messaggio>
+    <Descrizione>TestLettura</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Codeline Errata: </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>125</ID_Messaggio>
+    <Descrizione>TestLettura</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Errore double leafing...Continuare?</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>126</ID_Messaggio>
+    <Descrizione>TestQualitaImmagine</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire un documento per verificare l'immagine </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>127</ID_Messaggio>
+    <Descrizione>TestQualitaImmagine</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>La qualità dell' immagine è buona ?</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>128</ID_Messaggio>
+    <Descrizione>TestQualitaImmagine</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire un documento per verificare l'immagine </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>129</ID_Messaggio>
+    <Descrizione>TestSfogliatore</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire Documenti per prova sfogliatore </CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>130</ID_Messaggio>
+    <Descrizione>TestSfogliatore</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire Documento per test Sfogliatore</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>131</ID_Messaggio>
+    <Descrizione>TestSerialNumberPiastra</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire SerialNumber Piastra</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>132</ID_Messaggio>
+    <Descrizione>TestHubUsb</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Inserire la chiavetta USB di test nella porta Hub di LS150</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>186</ID_Messaggio>
+    <Descrizione>TestBadge</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Traccie del badge lette non correttamente</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>190</ID_Messaggio>
+    <Descrizione>TestLettura</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Sorter Bin Pieno ! Togliere i documenti processati</CorpoMessaggio>
+  </T_Messaggi>
+  <T_Messaggi>
+    <ID_Messaggio>191</ID_Messaggio>
+    <Descrizione>TestIdentificativo</Descrizione>
+    <Titolo>Attenzione</Titolo>
+    <CorpoMessaggio>Collegare ORA la periferica da collaudare</CorpoMessaggio>
+  </T_Messaggi>
+</Collaudi02DataSet>
