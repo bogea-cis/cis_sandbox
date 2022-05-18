@@ -34,6 +34,8 @@ int _tmain(int argc, _TCHAR* argv[])
   {
     printf("Open Error!\n");
   }
+  printf(" Press any key to exit!\n");
+  _getch();
 	return 0;
 }
 
@@ -67,7 +69,6 @@ int send(unsigned char* data, int length)
 int receive(unsigned char* data, int timeout)
 {
   int iRet = -1;
-  CRC ucrc;
   std::string cmd;
 
 
