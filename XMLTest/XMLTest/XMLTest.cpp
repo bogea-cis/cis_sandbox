@@ -56,12 +56,14 @@ int _tmain(int argc, _TCHAR* argv[])
   data = key->GetFirstChild();
   for (int i = 0; i < len; i++) {
     if (data->GetElementType() == XET_TAG) {
-      wprintf(L"name %s type: %d\n", data->GetElementName(), data->GetElementType());
+      wprintf(L"TAG name %s type: %d\n", data->GetElementName(), data->GetElementType());
       data = data->GetFirstChild();
     }
     if (data->GetElementType() == XET_ATTRIBUTE) {
-      wprintf(L"attr %s type: %d\n", data->GetElementName(), data->GetElementType());
+      wprintf(L"attribute %s type: %d\n", data->GetElementName(), data->GetElementType());
       wprintf(L"value: %s\n", data->GetValue());
+      stkey.index = atoi( ( char*)data->GetValue());
+      printf("stkey.index: %d\n", stkey.index);
     }
     if (data->GetElementType() == XET_TEXT) {
       wprintf(L"text: %s type: %d\n", data->GetElementName(), data->GetElementType());
