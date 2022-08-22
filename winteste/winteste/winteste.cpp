@@ -23,6 +23,8 @@ HWND now_TextBox;         // exemplo Caixa de texto mais atual
 HWND show_TextField;      // exemplo Campo de exibicao de texto
 HWND operation_Button;    // exemplo Botao para execucao de rotina
 HWND exit_Button;         // exemplo Botao de saida do programa
+HWND show_Lable;          // exemplo Lable
+HFONT font_Label;          // exemplo de font para Label
 
 int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
@@ -145,6 +147,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     show_TextField = CreateWindow(TEXT("EDIT"), TEXT(""), WS_VISIBLE | WS_CHILD | WS_BORDER | ES_READONLY, 20, 150, 150, 20, hWnd, (HMENU)3, NULL, NULL);
     operation_Button = CreateWindow(TEXT("BUTTON"), TEXT("RUN"), WS_VISIBLE | WS_CHILD, 20, 200, 80, 25, hWnd, (HMENU)1, NULL, NULL);
     exit_Button = CreateWindow(TEXT("BUTTON"), TEXT("EXIT"), WS_VISIBLE | WS_CHILD, 120, 200, 80, 25, hWnd, (HMENU)2, NULL, NULL);
+    show_Lable = CreateWindowEx(WS_EX_CLIENTEDGE, TEXT("STATIC"), TEXT("LABLE para exibição"), WS_CHILD | WS_VISIBLE | SS_CENTER, 20, 20, 210, 20, hWnd, HMENU(NULL), GetModuleHandle(NULL), NULL);
+    font_Label = CreateFont(14, 0, 0, 0, FW_DONTCARE, FALSE, FALSE, FALSE, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_SWISS, L"Verdana");
+    SendMessage(show_Lable, WM_SETFONT, WPARAM(font_Label), TRUE);
     break;
 
 	case WM_COMMAND:
@@ -189,6 +194,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			return DefWindowProc(hWnd, message, wParam, lParam);
 		}
 		break;
+
+  case WM_SETFONT:
+    break;
 
 	case WM_PAINT:
 		hdc = BeginPaint(hWnd, &ps);
