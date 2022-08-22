@@ -149,7 +149,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     exit_Button = CreateWindow(TEXT("BUTTON"), TEXT("EXIT"), WS_VISIBLE | WS_CHILD, 120, 200, 80, 25, hWnd, (HMENU)2, NULL, NULL);
     show_Lable = CreateWindowEx(WS_EX_CLIENTEDGE, TEXT("STATIC"), TEXT("LABLE para exibição"), WS_CHILD | WS_VISIBLE | SS_CENTER, 20, 20, 210, 20, hWnd, HMENU(NULL), GetModuleHandle(NULL), NULL);
     font_Label = CreateFont(14, 0, 0, 0, FW_DONTCARE, FALSE, FALSE, FALSE, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_SWISS, L"Verdana");
+    SendMessage(old_TextBox, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(now_TextBox, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(show_TextField, WM_SETFONT, WPARAM(font_Label), TRUE);
     SendMessage(show_Lable, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(operation_Button, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(exit_Button, WM_SETFONT, WPARAM(font_Label), TRUE);
     break;
 
 	case WM_COMMAND:
