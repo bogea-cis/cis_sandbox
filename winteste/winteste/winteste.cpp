@@ -85,8 +85,9 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
 	wcex.hInstance		= hInstance;
 	wcex.hIcon			= LoadIcon(hInstance, MAKEINTRESOURCE(IDI_WINTESTE));
 	wcex.hCursor		= LoadCursor(NULL, IDC_ARROW);
-	wcex.hbrBackground	= (HBRUSH)(COLOR_WINDOW+1);
-	wcex.lpszMenuName	= MAKEINTRESOURCE(IDC_WINTESTE);
+  //wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
+  wcex.hbrBackground = (HBRUSH)GetStockObject(GRAY_BRUSH);
+  wcex.lpszMenuName = MAKEINTRESOURCE(IDC_WINTESTE);
 	wcex.lpszClassName	= szWindowClass;
 	wcex.hIconSm		= LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_SMALL));
 
@@ -157,57 +158,60 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     SendMessage(exit_Button, WM_SETFONT, WPARAM(font_Label), TRUE);
     break;
 
-	case WM_COMMAND:
-		wmId    = LOWORD(wParam);
-		wmEvent = HIWORD(wParam);
-		// Parse the menu selections:
-		switch (wmId)
-		{
-		case IDM_ABOUT:
-			DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
-			break;
+  case WM_COMMAND:
+    wmId = LOWORD(wParam);
+    wmEvent = HIWORD(wParam);
+    // Parse the menu selections:
+    switch (wmId)
+    {
+    case IDM_ABOUT:
+      DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
+      break;
 
-		case IDM_EXIT:
-			DestroyWindow(hWnd);
-			break;
+    case IDM_EXIT:
+      DestroyWindow(hWnd);
+      break;
 
     case 1:   // RUN  ( quando o botao RUN for pressionado)
-    {
-      int oldLen = GetWindowTextLength(old_TextBox) + 1;
-      wchar_t* oldtext = new wchar_t[oldLen];
-      GetWindowText(old_TextBox, &oldtext[0], oldLen);    // Leitura do que foi digitado em old_TextBox
+      {
+        int oldLen = GetWindowTextLength(old_TextBox) + 1;
+        wchar_t* oldtext = new wchar_t[oldLen];
+        GetWindowText(old_TextBox, &oldtext[0], oldLen);    // Leitura do que foi digitado em old_TextBox
 
-      int nowLen = GetWindowTextLength(now_TextBox) + 1;
-      wchar_t* nowtext = new wchar_t[nowLen];
-      GetWindowText(now_TextBox, &nowtext[0], nowLen);    // Leitura do que foi digitado em now_TextBox
+        int nowLen = GetWindowTextLength(now_TextBox) + 1;
+        wchar_t* nowtext = new wchar_t[nowLen];
+        GetWindowText(now_TextBox, &nowtext[0], nowLen);    // Leitura do que foi digitado em now_TextBox
 
-      SendMessage(show_TextField, EM_SETSEL, -1, -1);
-      SendMessage(show_TextField, EM_REPLACESEL, 0, (LPARAM)&oldtext[0]);   // Escreve em show_TextField
-      SendMessage(show_TextField, EM_REPLACESEL, 0, (LPARAM)&nowtext[0]);   // Escreve em show_TextField
-      delete[] oldtext;
-      delete[] nowtext;
+        SendMessage(show_TextField, EM_SETSEL, -1, -1);
+        SendMessage(show_TextField, EM_REPLACESEL, 0, (LPARAM)&oldtext[0]);   // Escreve em show_TextField
+        SendMessage(show_TextField, EM_REPLACESEL, 0, (LPARAM)&nowtext[0]);   // Escreve em show_TextField
+        delete[] oldtext;
+        delete[] nowtext;
 
-      SetWindowText(old_TextBox, TEXT(""));   // limpa old_TextBox
-      SetWindowText(now_TextBox, TEXT(""));   // limpa now_TextBox
-      break;
-    }
+        SetWindowText(old_TextBox, TEXT(""));   // limpa old_TextBox
+        SetWindowText(now_TextBox, TEXT(""));   // limpa now_TextBox
+        break;
+      }
+
     case 2:   // EXIT  ( quando o botao EXIT for pressionado)
       PostQuitMessage(0);
       break;
 
-		default:
-			return DefWindowProc(hWnd, message, wParam, lParam);
-		}
-		break;
+    default:
+      return DefWindowProc(hWnd, message, wParam, lParam);
+
+    }
+
+    break;
 
   case WM_SETFONT:
     break;
 
-	case WM_PAINT:
-		hdc = BeginPaint(hWnd, &ps);
-		// TODO: Add any drawing code here...
-		EndPaint(hWnd, &ps);
-		break;
+  case WM_PAINT:
+    hdc = BeginPaint(hWnd, &ps);
+    // TODO: Add any drawing code here...
+    EndPaint(hWnd, &ps);
+    break;
 
 	case WM_DESTROY:
 		PostQuitMessage(0);
@@ -215,7 +219,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 	default:
 		return DefWindowProc(hWnd, message, wParam, lParam);
+
 	}
+
 	return 0;
 }
 
