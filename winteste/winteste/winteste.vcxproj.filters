@@ -51,5 +51,8 @@
     <Image Include="winteste.ico">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="cis - small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

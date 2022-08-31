@@ -95,6 +95,7 @@
     <ResourceCompile Include="winteste.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="cis - small.ico" />
     <Image Include="small.ico" />
     <Image Include="winteste.ico" />
   </ItemGroup>
