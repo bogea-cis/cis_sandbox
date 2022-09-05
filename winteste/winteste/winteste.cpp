@@ -10,6 +10,8 @@
 HINSTANCE hInst;								// current instance
 TCHAR szTitle[MAX_LOADSTRING];					// The title bar text
 TCHAR szWindowClass[MAX_LOADSTRING];			// the main window class name
+static wchar_t *title = TEXT("Check Box");
+BOOL checked;
 
 // Forward declarations of functions included in this code module:
 ATOM				MyRegisterClass(HINSTANCE hInstance);
@@ -25,6 +27,12 @@ HWND operation_Button;    // exemplo Botao para execucao de rotina
 HWND exit_Button;         // exemplo Botao de saida do programa
 HWND show_Lable;          // exemplo Lable
 HFONT font_Label;          // exemplo de font para Label
+HWND someCheckBox;        // exemplo de CheckBox
+HWND hGroupButtons;
+HWND firstRadioButton;
+HWND secondRadioButton;
+HWND thirdRadioButton;
+HWND fourthRadioButton;
 
 int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
@@ -86,7 +94,7 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
 	wcex.hIcon			= LoadIcon(hInstance, MAKEINTRESOURCE(IDI_WINTESTE));
 	wcex.hCursor		= LoadCursor(NULL, IDC_ARROW);
   //wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
-  wcex.hbrBackground = (HBRUSH)GetStockObject(GRAY_BRUSH);
+  wcex.hbrBackground = (HBRUSH)GetStockObject(GRAY_BRUSH);  // aqui coloca a cor de fundo que escolhi.
   wcex.lpszMenuName = MAKEINTRESOURCE(IDC_WINTESTE);
 	wcex.lpszClassName	= szWindowClass;
 	wcex.hIconSm		= LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_SMALL));
@@ -150,17 +158,34 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     exit_Button = CreateWindow(TEXT("BUTTON"), TEXT("EXIT"), WS_VISIBLE | WS_CHILD, 120, 200, 80, 25, hWnd, (HMENU)2, NULL, NULL);
     show_Lable = CreateWindowEx(WS_EX_CLIENTEDGE, TEXT("STATIC"), TEXT("LABLE para exibição"), WS_CHILD | WS_VISIBLE | SS_CENTER, 20, 20, 210, 20, hWnd, HMENU(NULL), GetModuleHandle(NULL), NULL);
     font_Label = CreateFont(14, 0, 0, 0, FW_DONTCARE, FALSE, FALSE, FALSE, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_SWISS, L"Verdana");
+
+    someCheckBox = CreateWindow(TEXT("button"), TEXT("show title"), WS_VISIBLE | WS_CHILD | BS_CHECKBOX, 20, 250, 185, 20, hWnd, (HMENU)4, ((LPCREATESTRUCT)lParam)->hInstance, NULL);
+    CheckDlgButton(hWnd, 4, BST_UNCHECKED);
+
+    firstRadioButton = CreateWindowEx(WS_EX_WINDOWEDGE, L"BUTTON", L"1st radio button", WS_VISIBLE | WS_CHILD | BS_AUTORADIOBUTTON, 500, 100, 300, 20, hWnd, (HMENU)5, hInst, NULL);
+    secondRadioButton = CreateWindowEx(WS_EX_WINDOWEDGE, L"BUTTON", L"2nd radio button", WS_VISIBLE | WS_CHILD | BS_AUTORADIOBUTTON, 500, 130, 300, 20, hWnd, (HMENU)6, hInst, NULL);
+    thirdRadioButton =  CreateWindowEx(WS_EX_WINDOWEDGE, L"BUTTON", L"3rd radio button", WS_VISIBLE | WS_CHILD | BS_AUTORADIOBUTTON, 500, 160, 300, 20, hWnd, (HMENU)7, hInst, NULL);
+    fourthRadioButton = CreateWindowEx(WS_EX_WINDOWEDGE, L"BUTTON", L"4th radio button", WS_VISIBLE | WS_CHILD | BS_AUTORADIOBUTTON, 500, 190, 300, 20, hWnd, (HMENU)8, hInst, NULL);
+    hGroupButtons = CreateWindowEx(WS_EX_WINDOWEDGE, L"BUTTON", L"Select Process Mode:", WS_VISIBLE | WS_CHILD | BS_GROUPBOX, 490, 70, 320, 150, hWnd, (HMENU)9, hInst, NULL);
+
     SendMessage(old_TextBox, WM_SETFONT, WPARAM(font_Label), TRUE);
     SendMessage(now_TextBox, WM_SETFONT, WPARAM(font_Label), TRUE);
     SendMessage(show_TextField, WM_SETFONT, WPARAM(font_Label), TRUE);
     SendMessage(show_Lable, WM_SETFONT, WPARAM(font_Label), TRUE);
     SendMessage(operation_Button, WM_SETFONT, WPARAM(font_Label), TRUE);
     SendMessage(exit_Button, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(someCheckBox, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(firstRadioButton, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(secondRadioButton, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(thirdRadioButton, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(fourthRadioButton, WM_SETFONT, WPARAM(font_Label), TRUE);
+    SendMessage(hGroupButtons, WM_SETFONT, WPARAM(font_Label), TRUE);
     break;
 
   case WM_COMMAND:
     wmId = LOWORD(wParam);
     wmEvent = HIWORD(wParam);
+
     // Parse the menu selections:
     switch (wmId)
     {
@@ -197,11 +222,46 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
       PostQuitMessage(0);
       break;
 
+    case 4:   // CheckBox 
+      checked = IsDlgButtonChecked(hWnd, 4);
+      if (checked) {
+        CheckDlgButton(hWnd, 4, BST_UNCHECKED);
+        SetWindowText(show_TextField, TEXT(""));
+      }
+      else {
+        CheckDlgButton(hWnd, 4, BST_CHECKED);
+        SetWindowText(show_TextField, title);
+      }
+      break;
+
     default:
       return DefWindowProc(hWnd, message, wParam, lParam);
 
     }
+    break;
 
+  case 5:
+    if (IsDlgButtonChecked(hWnd, 5)) {
+      SetWindowText(show_TextField, TEXT("1st radioButton"));
+    }
+    break;
+
+  case 6:
+    if (IsDlgButtonChecked(hWnd, 5)) {
+      SetWindowText(show_TextField, TEXT("2nd radioButton"));
+    }
+    break;
+
+  case 7:
+    if (IsDlgButtonChecked(hWnd, 5)) {
+      SetWindowText(show_TextField, TEXT("3rd radioButton"));
+    }
+    break;
+
+  case 8:
+    if (IsDlgButtonChecked(hWnd, 5)) {
+      SetWindowText(show_TextField, TEXT("4th radioButton"));
+    }
     break;
 
   case WM_SETFONT:
