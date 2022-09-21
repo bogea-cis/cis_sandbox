@@ -69,7 +69,7 @@ End Sub
 
 Private Sub Command2_Click()
 iRet = pInitialize()
-iRet = pPrintRaw(Chr(27) & "V" & "123456789012345678901234567890123456789012345678" & Chr(10), 51)
+Autentica ("1234567890123456789012345678901234567890123")
 iRet = pTerminate()
 End Sub
 
@@ -77,7 +77,7 @@ Private Sub Command3_Click()
 Dim status As Long
 iRet = pInitialize()
 iRet = pGetStatus(status)
-Text1.Text = status
+Text1.text = status
 iRet = pTerminate()
 End Sub
 
@@ -85,4 +85,17 @@ Private Sub Command4_Click()
 iRet = pInitialize()
 iRet = pPrtCutter(1)
 iRet = pTerminate()
+End Sub
+
+Private Sub Autentica(ByVal text As String)
+Const Logo As String = "FF FF 83 83 AB AB AB AB 83 D7 FF FF 87 83 EB EB EB EB 83 87 FF FF 83 83 F3 E7 CF 9F 83 83 FF FF 83 83 EB EB EB EB E3 F7 FF FF "
+Dim LogoBin As String
+For ii = 1 To Len(Logo) Step 3
+    LogoBin = LogoBin + Chr$(Val("&h" + Mid$(Logo, ii, 2)))
+Next ii
+LogoBin = Chr$(27) + "K" + Chr$(Len(LogoBin) Mod 256) + Chr$(Len(LogoBin) / 256) + LogoBin
+
+
+iRet = pPrintRaw(Chr(27) & "V" & LogoBin & text & Chr(10), (Len(LogoBin) + Len(text) + 3))
+
 End Sub
