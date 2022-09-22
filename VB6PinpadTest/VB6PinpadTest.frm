@@ -119,7 +119,7 @@ Private Declare Function pGetMediaStatus Lib "cis_pinpadlib32.dll" Alias "GetMed
 Private Declare Function pStartReadSKey Lib "cis_pinpadlib32.dll" Alias "StartReadSKey" (ByVal pinParams As String, ByRef enventId As Long) As Long
 Private Declare Function pGetDataSKey Lib "cis_pinpadlib32.dll" Alias "GetDataSKey" (ByRef endKey As Long, ByRef eventId As Long) As Long
 Private Declare Function pCreatePinBlock Lib "cis_pinpadlib32.dll" Alias "CreatePinblock" (ByVal mode As Byte, ByVal pbFmt As Byte, ByVal mKeyIdx As Long, ByVal wKey As String, ByVal PAN As String, ByVal PinBlock As String, ByRef maxSize As Long) As Long
-
+Private Declare Function pLedControl Lib "cis_pinpadlib32.dll" Alias "LedControl" (ByVal cLED1 As Byte, ByVal cLED2 As Byte, ByVal cLED3 As Byte, ByVal cLED4 As Byte, ByVal cLEDBL As Byte) As Long
 
 Private Sub Command_INFO_Click()
 Dim iRet As Long
@@ -179,6 +179,7 @@ Track3.Text = Mid$(stMsrEvent, 80 + 41 + 1, (InStr(80 + 41 + 1, stMsrEvent, " ")
 'Track2.Text = Left$(msrEvent.Track2, 41)
 'Track3.Text = Left$(msrEvent.Track3, 108)
 
+iRet = pClearScreen(0, 0, 0, 0)
 iRet = pCancelEvent(eventId)
 End Sub
 
@@ -220,6 +221,7 @@ Const ReadRecord3 As String = "00B2030C00"
 iRet = pInitialize(0)
 iRet = pClearScreen(0, 0, 0, 0)
 iRet = pWriteDisplay(1, 5, "INSIRA O CARTAO")
+iRet = pLedControl(49, 49, 49, 49, 48)
 iRet = pStartReadSMC(eventId)
 
 Do
@@ -243,6 +245,8 @@ For i = 1 To 7
 Next i
 
 
+iRet = pClearScreen(0, 0, 0, 0)
+iRet = pLedControl(48, 48, 48, 48, 48)
 
 iRet = pCancelEvent(eventId)
 End Sub
@@ -301,6 +305,8 @@ pinParams = conv32bits(minKeys) + conv32bits(MaxKeys) + convBol(autoEnd) + convB
 iRet = pInitialize(0)
 iRet = pClearScreen(0, 0, 0, 0)
 iRet = pWriteDisplay(1, 5, "DIGITE A SENHA")
+iRet = pLedControl(48, 48, 48, 48, 49)
+
 iRet = pStartReadSKey(pinParams, eventId)
 
 endKey = -1
@@ -315,6 +321,8 @@ iRet = pCreatePinBlock(49, 50, 1, WorkingKey, PAN, PinBlock, maxSize)
 
 TxtPinBlock.Text = Left$(PinBlock, 16)
 'MsgBox (PinBlock)
+iRet = pClearScreen(0, 0, 0, 0)
+iRet = pLedControl(48, 48, 48, 48, 48)
 
 iRet = pCancelEvent(eventId)
 End Sub
