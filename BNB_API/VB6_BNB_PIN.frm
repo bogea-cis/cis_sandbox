@@ -40,24 +40,46 @@ Begin VB.Form Form1
       Top             =   240
       Width           =   1335
    End
+   Begin VB.Label FechaLabel 
+      Height          =   375
+      Left            =   1800
+      TabIndex        =   5
+      Top             =   2160
+      Width           =   1455
+   End
+   Begin VB.Label AbreLabel 
+      Height          =   375
+      Left            =   1800
+      TabIndex        =   4
+      Top             =   240
+      Width           =   1455
+   End
 End
 Attribute VB_Name = "Form1"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Declare Function AbrePIN Lib "P32PinCx.dll" () As Long
-Declare Function LeBufferPIN Lib "P32PinCx.dll" (ByVal Buffer As String, ByRef Tamanho As Long, ByRef Controle As Integer) As Long
-Declare Function FechaPIN Lib "P32PinCx.dll" () As Long
+Private Declare Function AbrePIN Lib "P32PinCx.dll" () As Long
+Private Declare Function LeBufferPIN Lib "P32PinCx.dll" (ByVal Buffer As String, ByRef Tamanho As Long, ByRef Controle As Integer) As Long
+Private Declare Function FechaPIN Lib "P32PinCx.dll" () As Long
 
 Private Sub Abre_Click()
 Dim iRet As Long
 iRet = AbrePIN
+If iRet = 0 Then
+    AbreLabel.Caption = "OK"
+    FechaLabel.Caption = ""
+End If
 End Sub
 
 Private Sub Fecha_Click()
 Dim iRet As Long
 iRet = FechaPIN
+If iRet = 0 Then
+    AbreLabel.Caption = ""
+    FechaLabel.Caption = "OK"
+End If
 End Sub
 
 Private Sub LeBuffer_Click()
@@ -68,4 +90,7 @@ Dim Buffer As String
 Buffer = Space$(1024)
 Tamanho = 4
 iRet = LeBufferPIN(Buffer, Tamanho, Controle)
+If iRet = 0 Then
+    BufferBox.Text = Buffer
+End If
 End Sub
