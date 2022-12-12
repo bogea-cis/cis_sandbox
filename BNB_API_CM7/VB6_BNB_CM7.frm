@@ -31,8 +31,23 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Declare Function WinStartLeAssincronoCm7Cx Lib "P32CM7CX.DLL" (ByVal TimeLe As Long, ByVal TamBuff As Long) As Long
-Private Declare Function WinLeAssincronoCm7Cx Lib "P32CM7CX.DLL" (TamBuff As Long, ByVal lpAppBuff As String) As Long
+Private Declare Function WinLeAssincronoCm7Cx Lib "P32CM7CX.DLL" (ByVal TamBuff As Long, ByVal lpAppBuff As String) As Long
 
 Private Sub LeButton_Click()
-
+Dim iRet As Long
+Dim TimeLe As Integer
+Dim TamBuff As Integer
+Dim lpAppBuff As String
+lpAppBuff = Space$(1024)
+TamBuff = 50
+TimeLe = 60
+iRet = WinStartLeAssincronoCm7Cx(TimeLe, TamBuff)
+If iRet = 0 Then
+    Do
+    iRet = WinLeAssincronoCm7Cx(TamBuff, lpAppBuff)
+    If iRet = 0 Then
+        LeBox.Text = lpAppBuff
+    End If
+    Loop While (iRet = -6)
+End If
 End Sub
