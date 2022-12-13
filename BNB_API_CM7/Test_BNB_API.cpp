@@ -19,7 +19,7 @@ const char *m_pcszLibrary ="P32CM7CX.DLL";
 HMODULE m_pLibraryHandle;
 
 typedef int( __stdcall *PWinStartLeAssincronoCm7Cx)( int TimeLe, int TamBuff);
-typedef int( __stdcall *PWinLeAssincronoCm7Cx)( int TamBuff, char* lpAppBuff);
+typedef int( __stdcall *PWinLeAssincronoCm7Cx)( int* TamBuff, char* lpAppBuff);
 
 PWinStartLeAssincronoCm7Cx     m_WinStartLeAssincronoCm7Cx;
 PWinLeAssincronoCm7Cx          m_WinLeAssincronoCm7Cx;
@@ -60,9 +60,9 @@ int main( int argc, char *argv[])
   int Tamanho = 50;
   do {
   
-    API_Ret = m_WinLeAssincronoCm7Cx( Tamanho, Buffer);
+    API_Ret = m_WinLeAssincronoCm7Cx( &Tamanho, Buffer);
     Sleep(100);
-  } while( API_Ret == -6);
+  } while( API_Ret == 01);
     
   printf("[%s][%04d]m_WinLeAssincronoCm7Cx:[%d]\n", __FUNCTION__, __LINE__, API_Ret);
   printf("[%s][%04d]Tamanho:[%d]\n", __FUNCTION__, __LINE__, Tamanho);
@@ -70,5 +70,7 @@ int main( int argc, char *argv[])
   
   
   UnloadLib();
+  printf( "Press any key to exit\n");
+  getch();
   return 0;
 }
