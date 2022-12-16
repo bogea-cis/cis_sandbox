@@ -46,9 +46,9 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Private Declare Function WinStartLeAssincronoCartaoPassagemXP Lib "P32TCATM.DLL" Alias "WinStartLeAssincronoCartaoPassagem" (ByVal TimeLe As Long) As Long
-Private Declare Function WinLeAssincronoCartaoPassagemXP Lib "P32TCATM.DLL" Alias "WinLeAssincronoCartaoPassagem" (ByVal TamBuff As Long, ByVal lpAppBuff As String) As Long
-Private Declare Function WinCancelaLeituraCartaoPassagemXP Lib "P32TCATM.DLL" Alias "WinCancelaLeituraCartaoPassagem" () As Long
+Private Declare Function WinStartLeAssincronoCartaoPassagemXP Lib "P32TCATM.DLL" (ByVal TimeLe As Long) As Long
+Private Declare Function WinLeAssincronoCartaoPassagemXP Lib "P32TCATM.DLL" (ByVal TamBuff As Long, ByVal lpAppBuff As String) As Long
+Private Declare Function WinCancelaLeituraCartaoPassagemXP Lib "P32TCATM.DLL" () As Long
 
 Private Sub AbreButton_Click()
 Dim iRet As Long
@@ -67,5 +67,6 @@ Dim iRet As Long
 Dim TamBuff As Long
 Dim lpAppBuff As String
 lpAppBuff = Space$(1024)
+TamBuff = 1024
 iRet = WinLeAssincronoCartaoPassagemXP(TamBuff, lpAppBuff)
 End Sub
