@@ -9,11 +9,20 @@ Begin VB.Form Form1
    ScaleHeight     =   7110
    ScaleWidth      =   10065
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton CortarButton 
+      Caption         =   "Cortar"
+      Height          =   495
+      Left            =   240
+      TabIndex        =   6
+      Top             =   2400
+      Width           =   1215
+   End
    Begin VB.TextBox ImprimirBox 
       Height          =   4695
       Left            =   1680
       MultiLine       =   -1  'True
       TabIndex        =   5
+      Text            =   "VB6_BNB_PRT.frx":0000
       Top             =   1680
       Width           =   5415
    End
@@ -21,6 +30,7 @@ Begin VB.Form Form1
       Height          =   375
       Left            =   1680
       TabIndex        =   4
+      Text            =   "Teste de autenticacao 1234567890"
       Top             =   960
       Width           =   5415
    End
@@ -65,6 +75,8 @@ Private Declare Function WinIniciaPrtCx Lib "P32PRTCX.DLL" () As Integer
 Private Declare Function WinStatusPrtCx Lib "P32PRTCX.DLL" (ByVal buff As String) As Integer
 Private Declare Function WinImprimePrtCx Lib "P32PRTCX.DLL" (ByVal media As Integer, ByVal logo As Integer, ByVal buff As String, ByVal tam As Integer) As Integer
 Private Declare Function WinCancelPrtCx Lib "P32PRTCX.DLL" () As Integer
+Private Declare Function WinCutPrtCx Lib "P32PRTCX.DLL" () As Integer
+
 
 
 Private Sub AutenticarButton_Click()
@@ -74,11 +86,19 @@ Dim buff As String
 buff = Space$(100)
 iRet = WinIniciaPrtCx
 If iRet = 0 Then
-    buff = AutenticarBox.Text + Chr(10)
-    tam = Len(AutenticarBox.Text) + 1
+    buff = AutenticarBox.Text
+    tam = Len(AutenticarBox.Text)
     iRet = WinImprimePrtCx(1, 0, buff, tam)
 End If
 
+End Sub
+
+Private Sub CortarButton_Click()
+Dim iRet As Integer
+iRet = WinIniciaPrtCx
+If iRet = 0 Then
+    iRet = WinCutPrtCx
+End If
 End Sub
 
 Private Sub ImprimirButton_Click()

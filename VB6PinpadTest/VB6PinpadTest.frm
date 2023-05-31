@@ -9,6 +9,21 @@ Begin VB.Form Form1
    ScaleHeight     =   8040
    ScaleWidth      =   15510
    StartUpPosition =   3  'Windows Default
+   Begin VB.TextBox Text_GetPIN 
+      Height          =   525
+      Left            =   8880
+      TabIndex        =   18
+      Top             =   6000
+      Width           =   3375
+   End
+   Begin VB.CommandButton Command_GetPIN 
+      Caption         =   "Senha GetPIN"
+      Height          =   615
+      Left            =   6600
+      TabIndex        =   17
+      Top             =   6000
+      Width           =   2055
+   End
    Begin VB.TextBox TextEmvTagList 
       Height          =   375
       Left            =   6120
@@ -65,7 +80,7 @@ Begin VB.Form Form1
       Width           =   3615
    End
    Begin VB.CommandButton Command_Senha 
-      Caption         =   "Senha"
+      Caption         =   "Senha PINBLOCK"
       Height          =   615
       Left            =   240
       TabIndex        =   9
@@ -174,7 +189,51 @@ Private Declare Function pLedControl Lib "cis_pinpadlib32.dll" Alias "LedControl
 Private Declare Function pEMV_getCard Lib "cis_pinpadlib32.dll" Alias "EMV_getCard" (ByRef cardType As Byte, ByRef chipLastStatus As Byte, ByRef appTypeSel As Byte, ByRef networkSel As Byte, ByRef aidIndex As Byte, ByRef Track1 As Byte, ByRef Track2 As Byte, ByRef Track3 As Byte, ByRef PAN As Byte, ByRef panSeq As Byte, ByRef aquirerData As Byte) As Long
 Private Declare Function pEMV_PINChangeStart Lib "cis_pinpadlib32.dll" Alias "EMV_PINChangeStart" (ByVal aid As String, ByVal tagList As String, ByRef data As Byte) As Long
 Private Declare Function pEMV_PINChangeFinish Lib "cis_pinpadlib32.dll" Alias "EMV_PINChangeFinish" (ByVal pinBlock As String, ByVal mac As String) As Long
+Private Declare Function pGetPIN Lib "cis_pinpadlib32.dll" Alias "GetPIN" (ByRef endKey As Long, ByRef keyLen As Long, ByVal pin As String) As Long
 
+
+Private Sub Command_GetPIN_Click()
+Dim iRet As Long
+Dim eventId As Long
+Dim pinParams As String
+Dim endKey As Long
+Dim keyLen As Long
+Dim pinBlock As String
+pinBlock = Space$(100)
+Dim maxSize As Long
+
+minKeys = 4
+MaxKeys = 12
+startPosX = 3
+startPosY = 2
+autoEnd = True
+interKeyEv = True
+echoStar = True
+clearKeyBS = False
+
+pinParams = conv32bits(minKeys) + conv32bits(MaxKeys) + convBol(autoEnd) + convBol(interKeyEv) + _
+            convBol(clearKeyBS) + convBol(echoStar) + conv32bits(startPosX) + conv32bits(startPosY) + Space$(1024)
+
+iRet = pInitialize(0)
+iRet = pClearScreen(0, 0, 0, 0)
+iRet = pWriteDisplay(1, 5, "DIGITE A SENHA")
+iRet = pLedControl(48, 48, 48, 48, 49)
+
+iRet = pStartReadSKey(pinParams, eventId)
+
+endKey = -1
+Do
+    iRet = pGetPIN(endKey, keyLen, pinBlock)
+Loop While (endKey = -1)
+
+Text_GetPIN.Text = Left$(pinBlock, 16)
+'MsgBox (PinBlock)
+iRet = pClearScreen(0, 0, 0, 0)
+iRet = pLedControl(48, 48, 48, 48, 48)
+
+iRet = pCancelEvent(eventId)
+
+End Sub
 
 Private Sub Command_INFO_Click()
 Dim iRet As Long
